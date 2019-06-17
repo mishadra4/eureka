@@ -4,11 +4,8 @@ COPY src /tmp/src/
 WORKDIR /tmp/
 RUN mvn package
 
-RUN chmod g+rwx target -R
-
 FROM openjdk:8
 
-ADD target/eureka.jar eureka.jar
 
 ENTRYPOINT ["java", "-jar", "eureka.jar"]
 
