@@ -4,7 +4,7 @@ COPY src /tmp/src/
 WORKDIR /tmp/
 RUN mvn package
 
-RUN ls target -la
+RUN chmod g+rwx target -R
 
 FROM openjdk:8
 
