@@ -3,6 +3,9 @@ COPY pom.xml /tmp/
 COPY src /tmp/src/
 WORKDIR /tmp/
 RUN mvn package
+
+RUN ls -a
+
 FROM openjdk:8
 
 ADD diff/usr/src/app/target/eureka.jar eureka.jar
