@@ -4,7 +4,9 @@ COPY src /tmp/src/
 WORKDIR /tmp/
 RUN mvn package
 
-RUN thunar
+RUN cd target
+
+RUN ls -a
 
 FROM openjdk:8
 
