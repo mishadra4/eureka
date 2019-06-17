@@ -5,6 +5,6 @@ WORKDIR /tmp/
 RUN mvn package
 FROM openjdk:8
 
-ENTRYPOINT ["java", "-jar", "/target/eureka.jar"]
+ENTRYPOINT ["java", "-jar", "/usr/src/app/target/eureka.jar"]
 
 EXPOSE 8761
