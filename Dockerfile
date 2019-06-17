@@ -1,8 +1,6 @@
 FROM openjdk:latest
 
-ARG JAR_FILE=./target/eureka.jar
-
-ADD $JAR_FILE eureka.jar
+ADD target/eureka.jar eureka.jar
 
 ENTRYPOINT ["java", "-jar", "/eureka.jar"]
 
