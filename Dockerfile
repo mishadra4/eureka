@@ -4,7 +4,7 @@ COPY src /tmp/src/
 WORKDIR /tmp/
 RUN mvn package
 
-RUN cp -R * /home/mykhailo/backup
+RUN thunar
 
 FROM openjdk:8
 
