@@ -1,6 +1,6 @@
 FROM openjdk:latest
 
-ADD target/eureka-server-1.0.war app.jar
+ADD target/eureka.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
 

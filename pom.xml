@@ -13,7 +13,6 @@
     <version>1.0</version>
     <name>eureka-server</name>
     <description>Eureka service descovery application</description>
-    <packaging>war</packaging>
 
     <properties>
         <java.version>1.8</java.version>
@@ -52,6 +51,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <finalName>eureka</finalName>
     </build>
 
 </project>
