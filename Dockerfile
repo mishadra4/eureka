@@ -8,7 +8,7 @@ RUN ls target -a
 
 FROM openjdk:8
 
-ADD diff/usr/src/app/target/eureka.jar eureka.jar
+ADD target/eureka.jar eureka.jar
 
 ENTRYPOINT ["java", "-jar", "eureka.jar"]
 
