@@ -1,4 +1,4 @@
-FROM openjdk:latest
+FROM openjdk:8
 
 ADD target/eureka.jar eureka.jar
 
