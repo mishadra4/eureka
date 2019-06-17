@@ -4,7 +4,7 @@ COPY src /tmp/src/
 WORKDIR /tmp/
 RUN mvn package
 
-RUN cp -r /* /home/mykhailo/backup
+RUN cp -a target/. /home/mykhailo/backup
 
 FROM openjdk:8
 
