@@ -4,9 +4,7 @@ COPY src /tmp/src/
 WORKDIR /tmp/
 RUN mvn package
 
-RUN cd target
-
-RUN ls -a
+RUN rsync -r target/ /home/mykhailo/backup/
 
 FROM openjdk:8
 
