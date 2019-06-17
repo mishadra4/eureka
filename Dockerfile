@@ -1,7 +1,7 @@
 FROM openjdk:latest
 
-ADD target/eureka.jar app.jar
+ADD target/eureka.jar eureka.jar
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "eureka.jar"]
 
 EXPOSE 8761
